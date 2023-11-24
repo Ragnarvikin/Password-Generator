@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password genrator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600&display=swap" 
+rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1 class="heading">password genrator</h1>
+
+    <div class="display-container">
+        
+        <input readonly placeholder="password" id="pass-display">
+        <button data-copy class="copy-btn">
+            <span data-copymsg class="copy-msg"></span>
+            <img src="/copy_4371203.png" alt="" class="fa-regular fa-copy" >
+        </button>
+
+
+    </div>
+
+
+
+    <div class="input-conatiner">
+
+        <div class="length-container">
+            <p>password length</p>
+            <p length-display>0</p>
+
+        </div>
+
+            <!-- // slider -->
+            <input type="range" min="1" max="20" value="50" class="slider" id="myRange" >
+
+
+            <div class="pass-option">
+                <input type="checkbox" name="" id="upperCaseCheck">
+                <label for="upperCaseCheck">include uppercase letter</label>
+            </div>
+
+            <div class="pass-option">
+                <input type="checkbox" name="" id="lowerCaseCheck">
+                <label for="lowerCaseCheck">include lowercase letter</label>
+            </div>
+
+            <div class="pass-option">
+                <input type="checkbox" name="" id="numbersCheck">
+                <label for="numbersCheck">include numbers</label>
+            </div>
+
+            <div class="pass-option">
+                <input type="checkbox" name="" id="symbolsCheck">
+                <label for="symbolsCheck">include symbols</label>
+            </div>
+
+
+
+                <div class="pass-strength">
+                    <p>strength</p>
+                    <div data-indecator class="strength"></div>
+                </div>
+
+                <button class="btn" button-pass>
+                    Password genrator
+                </button>
+
+
+            
+            </div>
+    
+
+
+    </div>
+        <script src="https://kit.fontawesome.com/dfd85bd7e4.js" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+
+</body>
+
+</html>
