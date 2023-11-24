@@ -265,9 +265,10 @@ body{
     background-color: transparent;
     color: white;
     cursor: pointer;
+    filter: invert(1);
 }
 .fa-regular{
-    width: 30px;
+    width: 40px;
     /* background: transparent; */
     cursor: pointer;
     filter: invert();
